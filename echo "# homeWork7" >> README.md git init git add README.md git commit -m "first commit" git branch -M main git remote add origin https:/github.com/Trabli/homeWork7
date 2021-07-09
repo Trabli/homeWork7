@@ -1,0 +1,24 @@
+using System;
+
+namespace homeWork_7
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int counter;
+            string repeater;
+
+            Console.WriteLine("Я программа повторятор.");
+            Console.WriteLine("Я могу повторить ваше сообщение столько раз, сколько вам нужно.");
+            Console.Write("Напишите, что я должна повторить: ");
+            repeater = Console.ReadLine();
+            Console.Write("Сколько раз я должна это повторить:");
+            counter = Convert.ToInt32(Console.ReadLine());
+            while (counter -->0)
+            {
+                Console.WriteLine(repeater);
+            }
+        }
+    }
+}
